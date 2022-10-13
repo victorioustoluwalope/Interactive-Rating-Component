@@ -9,7 +9,7 @@ main{
       width: 25em;
       margin: 5em auto;
       padding: 1em 2em;
-      border-radius: 10px;
+      border-radius: 30px;
 }
 img{
       border: 20px solid hsl(213, 10%, 21%);
@@ -22,18 +22,25 @@ h1 {
 p {
       color: hsl(217, 12%, 63%);
 }
-div {
+section {
       display: flex;
 }
-div p{
-      border: 18px solid hsl(213, 10%, 21%);
+section div{
+      box-sizing: border-box;
+      height: 3.4em;
+      width: 3.4em;
+      border: 1px solid black;
+      border: none;
       border-radius: 50%;
-
+      background-color: hsl(213, 10%, 21%);
+      padding: 1em 1.3em;
+      color: hsl(217, 12%, 63%);
 }
-div p:not(:first-child){
-      margin-left: 1.5em;
+section div:not(:first-child){
+      margin-left: 0.5em;
 }
 button {
+      margin-top: 1em;
       height: 3em;
       width: 23em;
       background-color: hsl(25, 97%, 53%);
@@ -49,16 +56,17 @@ footer {
 footer a{
       color: hsl(25, 97%, 53%);
 }
-div p:active{
-      border-color: hsl(216, 12%, 54%);
-}
-div p:hover{
-      border-color: hsl(25, 97%, 53%);
+section div:hover{
+      background-color: hsl(25, 97%, 53%);
+      color: hsl(0, 0%, 100%);
       cursor: pointer;
+}
+section div:active{
+      background-color: hsl(216, 12%, 54%);
+      color: hsl(0, 0%, 100%);
 }
 button:hover {
       color: hsl(25, 97%, 53%);
       background-color:hsl(0, 0%, 100%);
       cursor: pointer;
-
 }
