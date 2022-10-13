@@ -49,3 +49,16 @@ footer {
 footer a{
       color: hsl(25, 97%, 53%);
 }
+div p:active{
+      border-color: hsl(216, 12%, 54%);
+}
+div p:hover{
+      border-color: hsl(25, 97%, 53%);
+      cursor: pointer;
+}
+button:hover {
+      color: hsl(25, 97%, 53%);
+      background-color:hsl(0, 0%, 100%);
+      cursor: pointer;
+
+}
